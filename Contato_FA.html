@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Filipe Arruda é um cantor de Vitória da Conquista - BA, apaixonado por sertanejo, modão e arrocha. Com 35 anos, ele emociona o público com sua voz marcante e interpretações autênticas. Seu talento e carisma conquistam cada vez mais fãs. 🎶🔥">
+        <meta name="author" content="Filipe Arruda">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Filipe Arruda • Contato</title>
+        <meta name="keywords" content="Arrocha, Sertanejo, Música, Cantor, Vitória da Conquista, Modão, Musicalidade">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Contato_style.css">
+        
+    </head>
+
+    <body>
+
+        <!--HEADER-->
+        <header>
+            <div class="container-fluid p-3 position-relative" id="nav">
+                <img src="images_faweb/Ativo_2.png" id="minilogo_fa" 
+                    alt="minilogo_filipe_arruda.png" 
+                    style="height: 50px; position: absolute; left: 20px; top: 50%; transform: translateY(-50%);">
+                
+                <!--NAV-->  
+                <nav class="nav justify-content-center">
+                    <a class="nav-item" id="active" href="index_FA.html">Início</a>
+                    <a class="nav-item" href="Sobre_FA.html">Sobre</a>
+                    <a class="nav-item" href="Albuns_FA.html">Albuns</a>
+                    <a class="nav-item" href="Agenda_FA.html">Agenda</a>
+                    <a class="nav-item" href="Contato_FA.html">Contato</a>
+                </nav>
+            </div>       
+            <div class="container-fluid" id="header">
+                <div id="cabeçalho"></div>
+            </div>
+        </header>
+        
+            <!--CONTEUDO-->
+            <section class="container mt-5 mb-5" id="conteudo">
+                <div class="row align-items-center">
+                    <div class="text-center">
+                        <h2 class="h3">Quer contar com o nosso show no seu evento?</h2>
+                        <h3 class="h5 mb-5">Entre em contato com a gente! </h3>
+                    </div>
+                    <div class="d-flex justify-content-center gap-5">
+                        <div class="col-sm-4 mt-3" id="forms">
+                            <form id="formContato" class="needs-validation" novalidate>
+                                <h2 class="h4" id="enunc">Preencha os campos abaixo: 👇🏽</h2><br>
+                              
+                                <div class="mb-3">
+                                  <label for="nome" class="form-label">Nome completo:</label>
+                                  <input type="text" id="nome" name="nome_completo" class="form-control" placeholder="Seu nome completo" required minlength="3" maxlength="50" autocomplete="name">
+                                  <div class="invalid-feedback">Informe seu nome completo (mín. 3 caracteres).</div>
+                                </div>
+                              
+                                <div class="mb-3">
+                                  <label for="tipo_evento" class="form-label">Tipo de evento:</label>
+                                  <input type="text" id="tipo_evento" name="tipo_evento" class="form-control" placeholder="Ex: Aniversário" minlength="3" maxlength="50">
+                                </div>
+                              
+                                <div class="mb-3">
+                                  <label for="data_evento" class="form-label">Data do evento:</label>
+                                  <input type="date" id="data_evento" name="data_evento" class="form-control" required>
+                                  <div class="invalid-feedback">Informe uma data para o evento.</div>
+                                </div>
+                              
+                                <div class="mb-3">
+                                  <label for="email" class="form-label">E-mail:</label>
+                                  <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@gmail.com" required>
+                                  <div class="invalid-feedback">Informe um e-mail válido.</div>
+                                </div>
+                              
+                                <div class="mb-3">
+                                  <label for="telefone" class="form-label">Telefone:</label>
+                                  <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00)12345-6789" autocomplete="tel">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="mensagem_contato" class="form-label">Deixe aqui sua mensagem:</label>
+                                    <textarea class="form-control" id="mensagem_contato" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
+                                </div>
+                              
+                                <button type="submit" class="btn mt-3">Enviar</button>
+                              
+                                <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
+                                  Formulário enviado com sucesso! 🎉
+                                </div>
+                              </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <!--FOOTER-->
+        <footer>
+            <hr id="border_footer">
+            <div class="container-fluid" id="footer-2">
+                <div class="row">
+                    <div class="col-sm-12">Copyright &copy; 2021 Flávio Brito. Todos os direitos reservados. </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeo5sa1onb1I4e2bE+N7t9eFmgc7kC2e1RSZ4p5F5S2B6B3N"
+        crossorigin="anonymous"></script>
+        <script>
+            const form = document.getElementById('formContato');
+            const mensagemSucesso = document.getElementById('mensagemSucesso');
+          
+            form.addEventListener('submit', function (event) {
+              event.preventDefault(); // impede o envio
+          
+              if (!form.checkValidity()) {
+                event.stopPropagation();
+                mensagemSucesso.classList.add('d-none');
+              } else {
+                mensagemSucesso.classList.remove('d-none');
+                form.reset(); // limpa os campos
+                form.classList.remove('was-validated'); // limpa a classe de validação
+              }
+          
+              form.classList.add('was-validated');
+            });
+          </script>
+    </body>
+</html>
